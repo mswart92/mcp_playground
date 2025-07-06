@@ -1,4 +1,4 @@
-namespace PetShop.API.Interfaces
+namespace Dierenwinkel.Services.Interfaces
 {
     public interface IEmailService
     {

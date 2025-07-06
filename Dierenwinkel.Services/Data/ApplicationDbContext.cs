@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using PetShop.API.Models;
+using Dierenwinkel.Services.Models;
 
-namespace PetShop.API.Data
+namespace Dierenwinkel.Services.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

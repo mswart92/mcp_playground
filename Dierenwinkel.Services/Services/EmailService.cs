@@ -1,9 +1,11 @@
-using PetShop.API.Interfaces;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Dierenwinkel.Services.Interfaces;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
 
-namespace PetShop.API.Services
+namespace Dierenwinkel.Services.Services
 {
     public class EmailService : IEmailService
     {

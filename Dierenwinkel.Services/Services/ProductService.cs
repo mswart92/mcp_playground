@@ -1,10 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using PetShop.API.Data;
-using PetShop.API.DTOs;
-using PetShop.API.Interfaces;
-using PetShop.API.Models;
+using Microsoft.Extensions.Logging;
+using Dierenwinkel.Services.Data;
+using Dierenwinkel.Services.DTOs;
+using Dierenwinkel.Services.Interfaces;
+using Dierenwinkel.Services.Models;
 
-namespace PetShop.API.Services
+namespace Dierenwinkel.Services.Services
 {
     public class ProductService : IProductService
     {

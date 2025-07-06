@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using PetShop.API.Data;
-using PetShop.API.Interfaces;
-using PetShop.API.Models;
-using PetShop.API.Services;
+using Dierenwinkel.Services.Data;
+using Dierenwinkel.Services.Interfaces;
+using Dierenwinkel.Services.Models;
+using Dierenwinkel.Services.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -207,3 +207,6 @@ async Task SeedAdminUserAsync(UserManager<ApplicationUser> userManager)
         }
     }
 }
+
+// Make Program class public for integration tests
+public partial class Program { }

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PetShop.API.Models
+namespace Dierenwinkel.Services.Models
 {
     public class Product
     {

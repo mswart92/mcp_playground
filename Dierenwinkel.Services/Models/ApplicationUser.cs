@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
-namespace PetShop.API.Models
+namespace Dierenwinkel.Services.Models
 {
     public class ApplicationUser : IdentityUser
     {

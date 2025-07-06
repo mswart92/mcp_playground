@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PetShop.API.DTOs;
-using PetShop.API.Interfaces;
+using Dierenwinkel.Services.DTOs;
+using Dierenwinkel.Services.Interfaces;
 using System.Security.Claims;
 
 namespace PetShop.API.Controllers

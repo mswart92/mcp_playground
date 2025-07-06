@@ -21,4 +21,8 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Dierenwinkel.Services\Dierenwinkel.Services.csproj" />
+  </ItemGroup>
+
 </Project>

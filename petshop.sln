@@ -1,8 +1,10 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShop.API", "PetShop.API\PetShop.API.csproj", "{831D010F-F806-5958-28D4-4B2B3B1AFE94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dierenwinkel.Services", "Dierenwinkel.Services\Dierenwinkel.Services.csproj", "{BF2B3517-E6A4-4DEE-B02D-67C652FFEB17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,6 +16,10 @@ Global
 		{831D010F-F806-5958-28D4-4B2B3B1AFE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{831D010F-F806-5958-28D4-4B2B3B1AFE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{831D010F-F806-5958-28D4-4B2B3B1AFE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2B3517-E6A4-4DEE-B02D-67C652FFEB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2B3517-E6A4-4DEE-B02D-67C652FFEB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2B3517-E6A4-4DEE-B02D-67C652FFEB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2B3517-E6A4-4DEE-B02D-67C652FFEB17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

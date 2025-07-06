@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Moq;
-using PetShop.API.Data;
-using PetShop.API.DTOs;
-using PetShop.API.Interfaces;
-using PetShop.API.Models;
-using PetShop.API.Services;
+using Dierenwinkel.Services.Data;
+using Dierenwinkel.Services.DTOs;
+using Dierenwinkel.Services.Interfaces;
+using Dierenwinkel.Services.Models;
+using Dierenwinkel.Services.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,13 +1,15 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using PetShop.API.DTOs;
-using PetShop.API.Interfaces;
-using PetShop.API.Models;
+using Dierenwinkel.Services.DTOs;
+using Dierenwinkel.Services.Interfaces;
+using Dierenwinkel.Services.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace PetShop.API.Services
+namespace Dierenwinkel.Services.Services
 {
     public class AuthService : IAuthService
     {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PetShop.API.DTOs
+namespace Dierenwinkel.Services.DTOs
 {
     public class OrderDto
     {

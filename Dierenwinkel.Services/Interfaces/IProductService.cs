@@ -1,6 +1,6 @@
-using PetShop.API.DTOs;
+using Dierenwinkel.Services.DTOs;
 
-namespace PetShop.API.Interfaces
+namespace Dierenwinkel.Services.Interfaces
 {
     public interface IProductService
     {

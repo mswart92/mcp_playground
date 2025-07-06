@@ -24,6 +24,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetShop.API\PetShop.API.csproj" />
+    <ProjectReference Include="..\Dierenwinkel.Services\Dierenwinkel.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="TempDisabled\**" />
+    <EmbeddedResource Remove="TempDisabled\**" />
+    <None Remove="TempDisabled\**" />
   </ItemGroup>
 
 </Project>

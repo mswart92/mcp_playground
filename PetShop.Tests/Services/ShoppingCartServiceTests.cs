@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using PetShop.API.Data;
-using PetShop.API.Models;
-using PetShop.API.Services;
+using Dierenwinkel.Services.Data;
+using Dierenwinkel.Services.Models;
+using Dierenwinkel.Services.Services;
 using Microsoft.Extensions.Logging;
 using Moq;
 using Xunit;
-using PetShop.API.DTOs;
+using Dierenwinkel.Services.DTOs;
 
 namespace PetShop.Tests.Services
 {
