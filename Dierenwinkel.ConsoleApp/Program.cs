@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.IO;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,11 +12,11 @@ using Dierenwinkel.Services.DTOs;
 using ModelContextProtocol.Server;
 
 // Create and configure the host
-var host = Host.CreateDefaultBuilder(args)
+var builder = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
     {
-        // Configure SQLite database
-        var connectionString = "Data Source=../PetShop.API/petshop_dev.db";
+        // Configure SQLite database with absolute path
+        var connectionString = "Data Source=/Users/matthew/petshop/PetShop.API/petshop_dev.db";
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlite(connectionString));
 
@@ -25,21 +26,20 @@ var host = Host.CreateDefaultBuilder(args)
         services.AddScoped<IShoppingCartService, ShoppingCartService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IEmailService, EmailService>();
-        
+
         // Add logging
         services.AddLogging(builder =>
         {
             builder.AddConsole();
             builder.SetMinimumLevel(LogLevel.Information);
         });
-        
-            services
+
+        services
             .AddMcpServer()
             .WithStdioServerTransport()
             .WithToolsFromAssembly();
-    })
-    .Build();
-
+    });
+await builder.Build().RunAsync();
 
 [McpServerToolType]
 public static class ProductTool
